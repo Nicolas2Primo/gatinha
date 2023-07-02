@@ -11,7 +11,7 @@ import { EffectCards } from "swiper";
 
 export default function App() {
   return (
-    <div className="flex flex-col h-screen items-center justify-center gap-20 mt-32 mb-32 md:mt-0 md:mb-0 md:gap-[250px] md:flex-row">
+    <div className="flex flex-col h-screen  items-center justify-center gap-20 mt-32 mb-32 md:mt-0 md:mb-0 md:gap-[250px] md:flex-row">
       <div className="flex flex-col items-center justify-center md:scale-150">
         <span className=" font-black text-[22px] text-white">Us</span>
         <Swiper
@@ -41,7 +41,8 @@ export default function App() {
               muted
               preload="metadata"
               playsInline
-              className="object-cover h-[225px] w-full pointer-events-none"
+              controlsList="false"
+              className="object-cover h-[225px] w-full"
             />
           </SwiperSlide>
           <SwiperSlide className=" rounded-2xl">
