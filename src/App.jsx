@@ -20,14 +20,14 @@ export default function App() {
   };
 
   return (
-    <div className="flex flex-col h-screen  items-center justify-center gap-20 mt-32 mb-32 md:mt-0 md:mb-0 md:gap-[250px] md:flex-row">
-      <div className="flex flex-col items-center justify-center md:scale-150">
+    <div className="flex flex-wrap h-full w-full lg:w-screen lg:h-screen  items-center justify-center gap-20 mt-32 mb-32 md:mt-12 md:mb-12 lg:mb-0 lg:mt-0 md:gap-[250px] md:flex-row ">
+      <div className="flex flex-col items-center justify-center md:scale-130 lg:scale-150">
         <span className=" font-black text-[22px] text-white">Us</span>
         <Swiper
           effect={"cards"}
           grabCursor={true}
           modules={[EffectCards]}
-          className="w-[200px] h-[200px]"
+          className="w-[200px] h-[200px] "
         >
           <SwiperSlide className=" rounded-2xl">
             <img src="./1.jpg" alt="" />
@@ -39,6 +39,7 @@ export default function App() {
               className="object-cover h-[200px] w-[240px]"
             />
           </SwiperSlide>
+
           <SwiperSlide className="rounded-2xl">
             <img src="./2.jpg" alt="" />
           </SwiperSlide>
@@ -88,7 +89,7 @@ export default function App() {
         </Swiper>
       </div>
 
-      <div className="flex flex-col items-center justify-center md:scale-150">
+      <div className="flex flex-col items-center justify-center md:scale-130 lg:scale-150">
         <span className=" font-black text-[22px] text-white">
           The lov of your life
         </span>
@@ -110,6 +111,27 @@ export default function App() {
               src="./14.jpg"
               alt=""
               className="h-[200px] object-cover w-full"
+            />
+          </SwiperSlide>
+          <SwiperSlide className=" rounded-2xl">
+            <img
+              src="./31.jpg"
+              alt=""
+              className="object-cover h-[280px] w-[240px]"
+            />
+          </SwiperSlide>
+          <SwiperSlide className=" rounded-2xl">
+            <img
+              src="./32.jpg"
+              alt=""
+              className="object-cover h-[200px] w-[240px]"
+            />
+          </SwiperSlide>
+          <SwiperSlide className=" rounded-2xl">
+            <img
+              src="./33.jpg"
+              alt=""
+              className="object-cover h-[200px] w-[240px]"
             />
           </SwiperSlide>
           <SwiperSlide className=" rounded-2xl">
@@ -141,6 +163,32 @@ export default function App() {
             />
           </SwiperSlide>
           <SwiperSlide className="rounded-2xl">
+            <video
+              src="./35.mp4"
+              autoPlay
+              loop
+              muted
+              preload="metadata"
+              playsInline
+              controlsList="false"
+              onLoadedData={handleVideoLoaded}
+              className="object-cover h-[200px] w-full"
+            />
+          </SwiperSlide>
+          <SwiperSlide className="rounded-2xl">
+            <video
+              src="./34.mp4"
+              autoPlay
+              loop
+              muted
+              preload="metadata"
+              playsInline
+              controlsList="false"
+              onLoadedData={handleVideoLoaded}
+              className="object-cover h-[200px] w-full"
+            />
+          </SwiperSlide>
+          <SwiperSlide className="rounded-2xl">
             <img
               src="./17.jpg"
               alt=""
@@ -150,7 +198,7 @@ export default function App() {
         </Swiper>
       </div>
 
-      <div className="flex flex-col items-center justify-center text-center md:scale-150">
+      <div className="flex flex-col items-center justify-center text-center md:scale-130 lg:scale-150">
         <span className=" font-black text-[22px] text-white">
           The second lov of your life
         </span>
