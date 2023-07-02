@@ -39,7 +39,8 @@ export default function App() {
               autoPlay
               loop
               muted
-              playsinline
+              preload="metadata"
+              playsInline
               className="object-cover h-[225px] w-full pointer-events-none"
             />
           </SwiperSlide>
@@ -60,7 +61,8 @@ export default function App() {
               loop
               autoPlay
               muted
-              playsinline
+              preload="metadata"
+              playsInline
               className="object-cover w-full h-[200px] pointer-events-none"
             />
           </SwiperSlide>
@@ -118,7 +120,8 @@ export default function App() {
               autoPlay
               loop
               muted
-              playsinline
+              preload="metadata"
+              playsInline
               className="object-cover h-[200px] w-full pointer-events-none"
             />
           </SwiperSlide>
@@ -173,7 +176,8 @@ export default function App() {
               autoPlay
               loop
               muted
-              playsinline
+              preload="metadata"
+              playsInline
               className="object-cover h-[225px] w-full pointer-events-none"
             />
           </SwiperSlide>
@@ -190,7 +194,8 @@ export default function App() {
               autoPlay
               loop
               muted
-              playsinline
+              preload="metadata"
+              playsInline
               className="object-cover h-[200px] w-full pointer-events-none"
             />
           </SwiperSlide>
@@ -207,7 +212,8 @@ export default function App() {
               autoPlay
               loop
               muted
-              playsinline
+              preload="metadata"
+              playsInline
               className="object-cover h-[225px] w-full pointer-events-none"
             />
           </SwiperSlide>
@@ -217,7 +223,8 @@ export default function App() {
               autoPlay
               loop
               muted
-              playsinline
+              preload="metadata"
+              playsInline
               className="object-cover h-[225px] w-full pointer-events-none"
             />
           </SwiperSlide>
