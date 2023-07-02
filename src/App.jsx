@@ -39,6 +39,7 @@ export default function App() {
               autoPlay
               loop
               muted
+              playsinline
               className="object-cover h-[225px] w-full pointer-events-none"
             />
           </SwiperSlide>
