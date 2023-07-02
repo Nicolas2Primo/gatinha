@@ -1,20 +1,54 @@
-import React from 'react';
+import React, { useRef, useState } from "react";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
 
-function App() {
-	return (
-		<div className='flex items-center justify-center w-screen h-screen bg-gray-900 '>
-			<div className='w-3/12 p-6 mx-auto space-y-10 text-center bg-gray-800 rounded'>
-				<h1 className='text-4xl text-white'>Vite + React + Tailwind</h1>
-				<p className='text-2xl text-blue-300'>It's working</p>
-				<a
-					href='https://github.com/moinulmoin/vite-react-tailwind-starter'
-					className='block text-3xl text-blue-300 underline'
-				>
-					⭐Star the repo if it helped you! :)
-				</a>
-			</div>
-		</div>
-	);
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/effect-cards";
+
+// import required modules
+import { EffectCards } from "swiper";
+
+export default function App() {
+  return (
+    <div className="flex items-center justify-center w-screen h-screen">
+      <Swiper
+        effect={"cards"}
+        grabCursor={true}
+        modules={[EffectCards]}
+        className="w-[200px] h-[200px]"
+      >
+        <SwiperSlide className="">
+          <div className="flex items-center justify-center w-full h-full bg-red-500 rounded-2xl ">
+            Slide 1
+          </div>
+        </SwiperSlide>
+        <SwiperSlide className="">
+          <div className="flex items-center justify-center w-full h-full bg-red-500 rounded-2xl">
+            Slide 1
+          </div>
+        </SwiperSlide>
+        <SwiperSlide className="">
+          <div className="flex items-center justify-center w-full h-full bg-red-500 rounded-2xl ">
+            Slide 2
+          </div>
+        </SwiperSlide>
+        <SwiperSlide className="">
+          <div className="flex items-center justify-center w-full h-full bg-red-500 rounded-2xl ">
+            Slide 3
+          </div>
+        </SwiperSlide>
+        <SwiperSlide className="">
+          <div className="flex items-center justify-center w-full h-full bg-red-500 rounded-2xl ">
+            Slide 4
+          </div>
+        </SwiperSlide>
+        <SwiperSlide className="">
+          <div className="flex items-center justify-center w-full h-full bg-red-500 rounded-2xl ">
+            Slide 5
+          </div>
+        </SwiperSlide>
+      </Swiper>
+    </div>
+  );
 }
-
-export default App;
