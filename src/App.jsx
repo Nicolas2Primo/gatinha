@@ -64,7 +64,8 @@ export default function App() {
               muted
               preload="metadata"
               playsInline
-              className="object-cover w-full h-[200px] pointer-events-none"
+              controlsList="false"
+              className="object-cover w-full h-[200px]"
             />
           </SwiperSlide>
           <SwiperSlide className="rounded-2xl">
@@ -123,7 +124,8 @@ export default function App() {
               muted
               preload="metadata"
               playsInline
-              className="object-cover h-[200px] w-full pointer-events-none"
+              controlsList="false"
+              className="object-cover h-[200px] w-full"
             />
           </SwiperSlide>
           <SwiperSlide className="rounded-2xl">
@@ -161,7 +163,8 @@ export default function App() {
               muted
               preload="metadata"
               playsInline
-              className="object-cover h-[225px] w-full pointer-events-none"
+              controlsList="false"
+              className="object-cover h-[225px] w-full"
             />
           </SwiperSlide>
           <SwiperSlide className="rounded-2xl">
@@ -179,7 +182,8 @@ export default function App() {
               muted
               preload="metadata"
               playsInline
-              className="object-cover h-[225px] w-full pointer-events-none"
+              controlsList="false"
+              className="object-cover h-[225px] w-full"
             />
           </SwiperSlide>
           <SwiperSlide className=" rounded-2xl">
@@ -197,7 +201,8 @@ export default function App() {
               muted
               preload="metadata"
               playsInline
-              className="object-cover h-[200px] w-full pointer-events-none"
+              controlsList="false"
+              className="object-cover h-[200px] w-full"
             />
           </SwiperSlide>
           <SwiperSlide className="rounded-2xl">
@@ -215,7 +220,8 @@ export default function App() {
               muted
               preload="metadata"
               playsInline
-              className="object-cover h-[225px] w-full pointer-events-none"
+              controlsList="false"
+              className="object-cover h-[225px] w-full"
             />
           </SwiperSlide>
           <SwiperSlide className="rounded-2xl">
@@ -226,7 +232,8 @@ export default function App() {
               muted
               preload="metadata"
               playsInline
-              className="object-cover h-[225px] w-full pointer-events-none"
+              controlsList="false"
+              className="object-cover h-[225px] w-full"
             />
           </SwiperSlide>
           <SwiperSlide className="rounded-2xl">
