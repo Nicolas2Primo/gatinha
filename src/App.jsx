@@ -39,7 +39,7 @@ export default function App() {
               autoPlay
               loop
               muted
-              className="object-cover h-[225px] w-full"
+              className="object-cover h-[225px] w-full pointer-events-none"
             />
           </SwiperSlide>
           <SwiperSlide className=" rounded-2xl">
