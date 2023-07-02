@@ -60,7 +60,8 @@ export default function App() {
               loop
               autoPlay
               muted
-              className="object-cover w-full h-[200px]"
+              playsinline
+              className="object-cover w-full h-[200px] pointer-events-none"
             />
           </SwiperSlide>
           <SwiperSlide className="rounded-2xl">
@@ -117,7 +118,8 @@ export default function App() {
               autoPlay
               loop
               muted
-              className="object-cover h-[200px] w-full"
+              playsinline
+              className="object-cover h-[200px] w-full pointer-events-none"
             />
           </SwiperSlide>
           <SwiperSlide className="rounded-2xl">
@@ -153,7 +155,8 @@ export default function App() {
               autoPlay
               loop
               muted
-              className="object-cover h-[225px] w-full"
+              playsinline
+              className="object-cover h-[225px] w-full pointer-events-none"
             />
           </SwiperSlide>
           <SwiperSlide className="rounded-2xl">
@@ -169,7 +172,8 @@ export default function App() {
               autoPlay
               loop
               muted
-              className="object-cover h-[225px] w-full"
+              playsinline
+              className="object-cover h-[225px] w-full pointer-events-none"
             />
           </SwiperSlide>
           <SwiperSlide className=" rounded-2xl">
@@ -185,7 +189,8 @@ export default function App() {
               autoPlay
               loop
               muted
-              className="object-cover h-[200px] w-full"
+              playsinline
+              className="object-cover h-[200px] w-full pointer-events-none"
             />
           </SwiperSlide>
           <SwiperSlide className="rounded-2xl">
@@ -201,7 +206,8 @@ export default function App() {
               autoPlay
               loop
               muted
-              className="object-cover h-[225px] w-full"
+              playsinline
+              className="object-cover h-[225px] w-full pointer-events-none"
             />
           </SwiperSlide>
           <SwiperSlide className="rounded-2xl">
@@ -210,7 +216,8 @@ export default function App() {
               autoPlay
               loop
               muted
-              className="object-cover h-[225px] w-full"
+              playsinline
+              className="object-cover h-[225px] w-full pointer-events-none"
             />
           </SwiperSlide>
           <SwiperSlide className="rounded-2xl">
