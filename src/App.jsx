@@ -8,8 +8,17 @@ import "swiper/css/effect-cards";
 
 // import required modules
 import { EffectCards } from "swiper";
+import { AiOutlineLoading3Quarters } from "react-icons/ai";
 
 export default function App() {
+  const totalVideos = 8; // Total number of videos to load
+  const [loadedVideos, setLoadedVideos] = useState(0); // Loaded videos counter
+
+  // Function to handle video loaded
+  const handleVideoLoaded = () => {
+    setLoadedVideos(loadedVideos + 1);
+  };
+
   return (
     <div className="flex flex-col h-screen  items-center justify-center gap-20 mt-32 mb-32 md:mt-0 md:mb-0 md:gap-[250px] md:flex-row">
       <div className="flex flex-col items-center justify-center md:scale-150">
@@ -42,6 +51,7 @@ export default function App() {
               preload="metadata"
               playsInline
               controlsList="false"
+              onLoadedData={handleVideoLoaded}
               className="object-cover h-[225px] w-full"
             />
           </SwiperSlide>
@@ -65,6 +75,7 @@ export default function App() {
               preload="metadata"
               playsInline
               controlsList="false"
+              onLoadedData={handleVideoLoaded}
               className="object-cover w-full h-[200px]"
             />
           </SwiperSlide>
@@ -125,6 +136,7 @@ export default function App() {
               preload="metadata"
               playsInline
               controlsList="false"
+              onLoadedData={handleVideoLoaded}
               className="object-cover h-[200px] w-full"
             />
           </SwiperSlide>
@@ -164,6 +176,7 @@ export default function App() {
               preload="metadata"
               playsInline
               controlsList="false"
+              onLoadedData={handleVideoLoaded}
               className="object-cover h-[225px] w-full"
             />
           </SwiperSlide>
@@ -183,6 +196,7 @@ export default function App() {
               preload="metadata"
               playsInline
               controlsList="false"
+              onLoadedData={handleVideoLoaded}
               className="object-cover h-[225px] w-full"
             />
           </SwiperSlide>
@@ -202,6 +216,7 @@ export default function App() {
               preload="metadata"
               playsInline
               controlsList="false"
+              onLoadedData={handleVideoLoaded}
               className="object-cover h-[200px] w-full"
             />
           </SwiperSlide>
@@ -221,6 +236,7 @@ export default function App() {
               preload="metadata"
               playsInline
               controlsList="false"
+              onLoadedData={handleVideoLoaded}
               className="object-cover h-[225px] w-full"
             />
           </SwiperSlide>
@@ -233,6 +249,7 @@ export default function App() {
               preload="metadata"
               playsInline
               controlsList="false"
+              onLoadedData={handleVideoLoaded}
               className="object-cover h-[225px] w-full"
             />
           </SwiperSlide>
