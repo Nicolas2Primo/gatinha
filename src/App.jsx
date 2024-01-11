@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import "./App.css";
@@ -13,6 +13,10 @@ import { AiOutlineLoading3Quarters } from "react-icons/ai";
 export default function App() {
   const totalVideos = 8; // Total number of videos to load
   const [loadedVideos, setLoadedVideos] = useState(0); // Loaded videos counter
+  const [isMuted, setIsMuted] = useState(false);
+  const videoRef = useRef(null);
+
+
 
   // Function to handle video loaded
   const handleVideoLoaded = () => {
@@ -70,14 +74,25 @@ export default function App() {
     ["img", "./48.jpg"],
   ]);
 
+  useEffect(() => {
+  const timer = setTimeout(() => {
+    setIsMuted(true);
+  }, 3000);
+
+  return () => clearTimeout(timer);
+}, []);
+
+
   return (
     <div className="flex flex-col items-center justify-center w-full gap-2 mt-10 h-fulls">
       
       <div className="flex flex-col items-center justify-center gap-2">
         <span className=" font-black text-[10px] lg:text-[20px] text-white text-center">O vídeo que eu queria ter mostrado para você no dia 31/12/23, quando nós estaríamos fazendo 7 meses juntos</span>
         <video
+        ref={videoRef}
         src="\last.mp4"
         autoPlay
+        muted={isMuted}
         loop
         preload="metadata"
         playsInline
