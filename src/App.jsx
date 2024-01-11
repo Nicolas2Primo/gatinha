@@ -77,7 +77,7 @@ export default function App() {
   useEffect(() => {
   const timer = setTimeout(() => {
     setIsMuted(true);
-  }, 3000);
+  }, 10000);
 
   return () => clearTimeout(timer);
 }, []);
@@ -92,7 +92,7 @@ export default function App() {
         ref={videoRef}
         src="\last.mp4"
         autoPlay
-        muted={isMuted}
+        muted
         loop
         preload="metadata"
         playsInline
