@@ -8,12 +8,12 @@ import "swiper/css/effect-cards";
 
 // import required modules
 import { EffectCards } from "swiper";
-import { AiOutlineLoading3Quarters } from "react-icons/ai";
+
 
 export default function App() {
   const totalVideos = 8; // Total number of videos to load
   const [loadedVideos, setLoadedVideos] = useState(0); // Loaded videos counter
-  const [isMuted, setIsMuted] = useState(false);
+
   const videoRef = useRef(null);
 
 
@@ -74,13 +74,7 @@ export default function App() {
     ["img", "./48.jpg"],
   ]);
 
-  useEffect(() => {
-  const timer = setTimeout(() => {
-    setIsMuted(true);
-  }, 10000);
 
-  return () => clearTimeout(timer);
-}, []);
 
 
   return (
@@ -88,15 +82,20 @@ export default function App() {
       
       <div className="flex flex-col items-center justify-center gap-2">
         <span className=" font-black text-[10px] lg:text-[20px] text-white text-center">O vídeo que eu queria ter mostrado para você no dia 31/12/23, quando nós estaríamos fazendo 7 meses juntos</span>
+        <span className=" font-black text-[7px] lg:text-[14px] text-white text-center">{"(Se quiser escutar o som é só tirar do mudo)"}</span>
         <video
         ref={videoRef}
         src="\last.mp4"
+        pla
         autoPlay
         muted
         loop
         preload="metadata"
         playsInline
-        controlsList="false"
+        controlsList="true"
+          
+        controls
+          
         className="w-[250px] md:w-[500px] lg:w-[900px] rounded-xl"  
       />
       </div>
