@@ -71,8 +71,22 @@ export default function App() {
   ]);
 
   return (
-    <div className="flex flex-wrap h-full w-full lg:w-screen lg:h-screen  items-center justify-center gap-20 mt-32 mb-32 md:mt-12 md:mb-12 lg:mb-0 lg:mt-0 md:gap-[250px] md:flex-row ">
-      <div className="flex flex-col items-center justify-center md:scale-130 lg:scale-150">
+    <div className="flex flex-col items-center justify-center w-full gap-2 mt-10 h-fulls">
+      
+      <div className="flex flex-col items-center justify-center gap-2">
+        <span className=" font-black text-[10px] lg:text-[20px] text-white text-center">O vídeo que eu queria ter mostrado para você no dia 31/12/23, quando nós estaríamos fazendo 7 meses juntos</span>
+        <video
+        src="\last.mp4"
+        autoPlay
+        loop
+        preload="metadata"
+        playsInline
+        controlsList="false"
+        className="w-[250px] md:w-[500px] lg:w-[900px] rounded-xl"  
+      />
+      </div>
+      <div className="flex flex-col items-center justify-between w-full md:p-20 lg:p-40 md:flex-row">
+        <div className="flex flex-col items-center justify-center md:scale-130 lg:scale-150">
         <span className=" font-black text-[22px] text-white">Us</span>
         <Swiper
           effect={"cards"}
@@ -104,7 +118,6 @@ export default function App() {
           ))}
         </Swiper>
       </div>
-
       <div className="flex flex-col items-center justify-center md:scale-130 lg:scale-150">
         <span className=" font-black text-[22px] text-white">
           The lov of your life
@@ -141,7 +154,6 @@ export default function App() {
           ))}
         </Swiper>
       </div>
-
       <div className="flex flex-col items-center justify-center text-center md:scale-130 lg:scale-150">
         <span className=" font-black text-[22px] text-white">
           The second lov of your life
@@ -180,6 +192,8 @@ export default function App() {
           ))}
         </Swiper>
       </div>
+      </div>
+      <span className="text-lg text-white">Eu te amei de verdade {":)"}</span>
     </div>
   );
 }
